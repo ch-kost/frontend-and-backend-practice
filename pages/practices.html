@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
+    <!-- Изменение: Заменили div на семантические теги -->
     <div class="page-container">
-        <div class="header">Логотип</div>
-        <div class="nav">
+        <header class="header"> <!-- Было: <div class="header"> -->
+            <h1>Логотип</h1> <!-- Добавили заголовок для семантики -->
+        </header>
+
+        <nav class="nav"> <!-- Было: <div class="nav"> -->
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
@@ -17,26 +21,26 @@
                 <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
                 <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
             </ul>
-        </div>
+        </nav>
         
-        <div class="content">
+        <main class="content"> <!-- Было: <div class="content"> -->
             <h1>Практики и методики</h1>
             <p>Здесь будет размещена информация о различных практиках и методиках, которые мы используем в работе.</p>
             
-            <div class="practice-item">
+            <section class="practice-item"> <!-- Было: <div class="practice-item"> -->
                 <h2>Agile разработка</h2>
                 <p>Используем гибкие методологии разработки для быстрого реагирования на изменения требований.</p>
-            </div>
+            </section>
             
-            <div class="practice-item">
+            <section class="practice-item"> <!-- Было: <div class="practice-item"> -->
                 <h2>Тестирование</h2>
                 <p>Применяем комплексный подход к тестированию для обеспечения высокого качества продукции.</p>
-            </div>
-        </div>
+            </section>
+        </main>
         
-        <div class="footer">
+        <footer class="footer"> <!-- Было: <div class="footer"> -->
             <p>© 2024 Семестровая работа. Все права защищены.</p>
-        </div>
+        </footer>
     </div>
 </body>
 </html>

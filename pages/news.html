@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
+    <!-- Изменение: Заменили div на семантические теги -->
     <div class="page-container">
-        <div class="header">Логотип</div>
-        <div class="nav">
+        <header class="header"> <!-- Было: <div class="header"> -->
+            <h1>Логотип</h1> <!-- Добавили заголовок для семантики -->
+        </header>
+
+        <nav class="nav"> <!-- Было: <div class="nav"> -->
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="news.html" aria-current="page">Новости</a></li>
@@ -17,12 +21,13 @@
                 <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
                 <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
             </ul>
-        </div>
+        </nav>
         
-        <div class="content">
+        <main class="content"> <!-- Было: <div class="content"> -->
             <h1>Последние новости</h1>
             
             <section class="news-grid">
+                <!-- Карточки новостей остаются без изменений -->
                 <article class="news-card">
                     <div class="news-card__meta">
                         <time datetime="2024-03-15" class="news-card__date">15 марта 2024</time>
@@ -63,11 +68,11 @@
                     <button class="btn btn--outline news-card__read-more">Читать далее</button>
                 </article>
             </section>
-        </div>
+        </main>
         
-        <div class="footer">
+        <footer class="footer"> <!-- Было: <div class="footer"> -->
             <p>© 2024 Семестровая работа. Все права защищены.</p>
-        </div>
+        </footer>
     </div>
 </body>
 </html>
